@@ -18,12 +18,14 @@
         android:id="@+id/operand1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="@string/first_side"
         android:inputType="numberSigned|numberDecimal"/>
 
     <EditText
         android:id="@+id/operand2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="@string/second_side"
         android:layout_marginTop="16dp"
         android:inputType="numberSigned|numberDecimal"/>
 

@@ -4,4 +4,7 @@
     <string name="factorial">Факториал числа</string>
     <string name="factorial_title">Факториал числа</string>
     <string name="square_title">Площадь прямоугольника</string>
+    <string name="first_side">Первая сторона</string>
+    <string name="second_side">Вторая сторона</string>
+    <string name="numb">Число</string>
 </resources>
