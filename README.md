@@ -1,1 +1,0 @@
-# Technopark-Android-RK1
