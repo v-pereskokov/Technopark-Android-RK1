@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Technopark-Android-RK1</string>
+    <string name="square">Площадь прямоугольника</string>
+    <string name="factorial">Факториал числа</string>
 </resources>
