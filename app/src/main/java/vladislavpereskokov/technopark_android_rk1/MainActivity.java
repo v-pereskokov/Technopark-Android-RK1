@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(final View view) {
                 final Intent intent = new Intent(MainActivity.this, CalcActivity.class);
+                intent.setAction(CalcActivity.ACTION_SQUARE);
                 startActivity(intent);
             }
         });
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(final View view) {
                 final Intent intent = new Intent(MainActivity.this, CalcActivity.class);
+                intent.setAction(CalcActivity.ACTION_FACTORIAL);
                 startActivity(intent);
             }
         });
