@@ -7,4 +7,9 @@
     <string name="first_side">Первая сторона</string>
     <string name="second_side">Вторая сторона</string>
     <string name="numb">Число</string>
+    <string name="th_sum">Сумма трех чисел</string>
+    <string name="f_numb">Первое число</string>
+    <string name="s_numb">Второе число</string>
+    <string name="t_numb">Третье число</string>
+    <string name="t_summmmm">Сумма трех чисел</string>
 </resources>

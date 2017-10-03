@@ -12,20 +12,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="@string/square_title" />
+        android:text="@string/t_summmmm" />
 
     <EditText
         android:id="@+id/operand1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/first_side"
+        android:hint="@string/f_numb"
         android:inputType="numberSigned|numberDecimal"/>
 
     <EditText
         android:id="@+id/operand2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/second_side"
+        android:hint="@string/s_numb"
+        android:layout_marginTop="16dp"
+        android:inputType="numberSigned|numberDecimal"/>
+
+    <EditText
+        android:id="@+id/operand3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/t_numb"
         android:layout_marginTop="16dp"
         android:inputType="numberSigned|numberDecimal"/>
 

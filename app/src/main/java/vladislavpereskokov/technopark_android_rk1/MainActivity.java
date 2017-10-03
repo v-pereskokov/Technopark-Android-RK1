@@ -29,5 +29,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        findViewById(R.id.three_sum).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(final View view) {
+                final Intent intent = new Intent(MainActivity.this, CalcActivity.class);
+                intent.setAction(CalcActivity.ACTION_THREE_SUM);
+                startActivity(intent);
+            }
+        });
     }
 }
