@@ -13,6 +13,9 @@ public class CalcActivity extends AppCompatActivity {
     public static final String ACTION_SQUARE = "*";
     public static final String ACTION_FACTORIAL = "!";
 
+    public static final String ERROR_INPUT_SQUARE = "Заполните все поля!";
+    public static final String ERROR_INPUT_FACT = "Заполните все поля!";
+
     private EditText operand1;
     private EditText operand2;
     private TextView result;
@@ -20,19 +23,28 @@ public class CalcActivity extends AppCompatActivity {
     private final View.OnClickListener squareClick = new View.OnClickListener() {
         @Override
         public void onClick(final View view) {
-            double op1 = Double.parseDouble(operand1.getText().toString());
-            double op2 = Double.parseDouble(operand2.getText().toString());
+            String op1 = operand1.getText().toString();
+            String op2 = operand2.getText().toString();
 
-            result.setText(String.valueOf(square(op1, op2)));
+            if (op1.length() == 0 || op2.length() == 0) {
+                result.setText(ERROR_INPUT_SQUARE);
+                return;
+            }
+
+            result.setText(String.valueOf(square(Double.parseDouble(op1), Double.parseDouble(op2))));
         }
     };
 
     private final View.OnClickListener factClick = new View.OnClickListener() {
         @Override
         public void onClick(final View view) {
-            int op1 = Integer.parseInt(operand1.getText().toString());
+            String op1 = operand1.getText().toString();
 
-            result.setText(String.valueOf(fact(op1)));
+            if (op1.length() == 0) {
+                result.setText(ERROR_INPUT_FACT);
+            }
+
+            result.setText(String.valueOf(fact(Integer.parseInt(op1))));
         }
     };
 
@@ -44,12 +56,10 @@ public class CalcActivity extends AppCompatActivity {
         switch (action) {
             case ACTION_SQUARE:
                 setContentView(R.layout.square);
-
                 findViewById(R.id.btn_add).setOnClickListener(squareClick);
                 break;
             case ACTION_FACTORIAL:
                 setContentView(R.layout.factorial);
-
                 findViewById(R.id.btn_add).setOnClickListener(factClick);
                 break;
             default:
